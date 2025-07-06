@@ -15,13 +15,13 @@ function App() {
       <button onClick={() => setShowContact(true)}>Show Contact</button>
       <Home />
       {showAbout && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading About Page...</div>}>
           <About />
         </Suspense>
       )}
 
       {showContact && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading Contact Page...</div>}>
           <Contact />
         </Suspense>
       )}
