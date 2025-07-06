@@ -6,6 +6,10 @@ import { Link, Route, Routes } from "react-router-dom";
 const About = lazy(() => import("./About"));
 const Contact = lazy(() => import("./Contact"));
 
+const NotFound = () => {
+  return <div>404 Not Found</div>;
+};
+
 function App() {
   return (
     <>
@@ -20,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </>
