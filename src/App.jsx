@@ -1,14 +1,11 @@
-import { Suspense, lazy, useState } from "react";
+import { Suspense, lazy } from "react";
 import "./App.css";
 import { Home } from "./Home";
 import { Link, Route, Routes } from "react-router-dom";
-
 const About = lazy(() => import("./About"));
 const Contact = lazy(() => import("./Contact"));
-
-const NotFound = () => {
-  return <div>404 Not Found</div>;
-};
+const Dashboard = lazy(() => import("./Dashboard"));
+const NotFound = lazy(() => import("./NotFound"));
 
 function App() {
   return (
@@ -17,6 +14,7 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/dashboard">Dashboard</Link>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>
@@ -24,6 +22,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="settings" element={<div>Settings Page</div>} />
+            <Route path="profile" element={<div>Profile Page</div>} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
