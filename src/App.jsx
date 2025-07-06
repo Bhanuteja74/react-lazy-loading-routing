@@ -1,9 +1,12 @@
+import { About } from "./About";
 import "./App.css";
+import { Home } from "./Home";
 
 function App() {
   return (
     <>
-      <p>Welcome to lazy loading practice</p>
+      <Home />
+      <About />
     </>
   );
 }
