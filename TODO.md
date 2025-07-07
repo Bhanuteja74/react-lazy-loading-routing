@@ -1,6 +1,4 @@
-# React Routing and Lazy Loading — Practice Project
-
-This project is a hands-on exploration of React Router and lazy loading in React. It tracks what I've learned and what I plan to learn next.
+# React Routing and Lazy Loading — Learning Tracker
 
 ## ✅ What I Have Learned
 
@@ -19,23 +17,21 @@ This project is a hands-on exploration of React Router and lazy loading in React
 - Reduced redundancy with `<Navigate>` for redirects.
 - Used programmatic navigation with `useNavigate` and `<Navigate>`.
 
-## 📚 What I Plan To Learn Next
+---
 
-- Nested Lazy Loading — Best Practices and Real-world Structure
-- Relative vs. Absolute `<Link>` Behavior
-- URL Parameters & Dynamic Routes (`/user/:id`)
-- Handling Query Parameters
-- Route Guards and Simple Protected Routes
-- Code Splitting Entire Route Trees
-- React Router Hooks Deep Dive (`useParams`, `useLocation`, `useNavigate`)
-- Layout Routes — Common UI (Navbars, Footers shared across pages)
+## 📚 What I Have To Learn (Checklist)
+
+- [ ] Nested Lazy Loading — Best Practices and Real-world Structure
+- [ ] Relative vs. Absolute `<Link>` Behavior
+- [ ] URL Parameters & Dynamic Routes (`/user/:id`)
+- [ ] Handling Query Parameters
+- [ ] Route Guards and Simple Protected Routes
+- [ ] Code Splitting Entire Route Trees
+- [ ] React Router Hooks Deep Dive (`useParams`, `useLocation`, `useNavigate`)
+- [ ] Layout Routes — Common UI (Navbars, Footers shared across pages)
 
 ### Optional Advanced Topics
 
-- Authentication Flow with Routing
-- Redirect After Login to Previous URL
-- Deeply Nested Routes (`/dashboard/settings/advanced`)
-
----
-
-Happy Learning!
+- [ ] Authentication Flow with Routing
+- [ ] Redirect After Login to Previous URL
+- [ ] Deeply Nested Routes (`/dashboard/settings/advanced`)
