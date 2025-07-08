@@ -1,16 +1,12 @@
 import { Suspense, lazy } from "react";
 import "./App.css";
 import { Home } from "./Home";
-import { Link, Route, Routes, useParams } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 const About = lazy(() => import("./About"));
 const Contact = lazy(() => import("./Contact"));
 const Dashboard = lazy(() => import("./Dashboard"));
 const NotFound = lazy(() => import("./NotFound"));
-
-function User() {
-  const { id } = useParams();
-  return <h1>User ID: {id}</h1>;
-}
+const User = lazy(() => import("./User"));
 
 function App() {
   return (
@@ -21,7 +17,7 @@ function App() {
         <Link to="/contact">Contact</Link>
         <Link to="/dashboard">Dashboard</Link>
         <Link>Fake</Link>
-        <Link to="/user/101">User 101</Link>
+        <Link to="/user/101">User</Link>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>

@@ -21,10 +21,10 @@
 
 ## 📚 What I Have To Learn (Checklist)
 
-- [ ] Nested Lazy Loading — Best Practices and Real-world Structure
-- [ ] Relative vs. Absolute `<Link>` Behavior
-- [ ] URL Parameters & Dynamic Routes (`/user/:id`)
-- [ ] Handling Query Parameters
+- [x] Nested Lazy Loading — Best Practices and Real-world Structure
+- [x] Relative vs. Absolute `<Link>` Behavior
+- [x] URL Parameters & Dynamic Routes (`/user/:id`)
+- [x] Handling Query Parameters
 - [ ] Route Guards and Simple Protected Routes
 - [ ] Code Splitting Entire Route Trees
 - [ ] React Router Hooks Deep Dive (`useParams`, `useLocation`, `useNavigate`)
@@ -35,3 +35,8 @@
 - [ ] Authentication Flow with Routing
 - [ ] Redirect After Login to Previous URL
 - [ ] Deeply Nested Routes (`/dashboard/settings/advanced`)
+
+###
+
+- for url params we can use at todos. `/user/todos/:id`
+- for url query we can practice with book search. `/books?author=Bhanu&title=LearnReact/dashboard?tab=settings/dashboard?tab=settings/dashboard?tab=settings`
