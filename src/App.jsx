@@ -1,17 +1,13 @@
 import { Suspense, lazy } from "react";
 import "./App.css";
 import { Home } from "./Home";
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
+import NotFound from "./NotFound";
 const About = lazy(() => import("./About"));
 const Contact = lazy(() => import("./Contact"));
 const Dashboard = lazy(() => import("./Dashboard"));
-const NotFound = lazy(() => import("./NotFound"));
 const User = lazy(() => import("./User"));
-
-function ProtectedRoute({ children }) {
-  const isAuthenticated = false;
-  return isAuthenticated ? children : <Navigate to="/" />;
-}
 
 function App() {
   return (
